@@ -1,0 +1,25 @@
+# Ignore node_modules folder in case you add dependencies later
+node_modules/
+
+# Ignore build or dist directories
+dist/
+build/
+
+# Ignore cache files
+*.log
+.cache/
+
+# Ignore environment variables
+.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+
+# Ignore IDE and editor configuration files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

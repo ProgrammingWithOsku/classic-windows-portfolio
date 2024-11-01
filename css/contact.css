@@ -1,0 +1,117 @@
+/* contact.css */
+
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #e0ebff;
+  /* Light grayish-blue XP background */
+  border: 1px solid #a2c4e7;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  /* XP 3D effect */
+  border-radius: 5px;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px #ffffff;
+  /* Subtle XP text shadow */
+}
+
+.contact-content p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 2px solid #8a8a8a;
+  /* XP border style */
+  border-radius: 4px;
+  font-size: 1em;
+  box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.8);
+  /* 3D input effect */
+}
+
+/* XP-Inspired Submit Button */
+.submit-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #333;
+  background-color: #e8e8e8;
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  /* 3D button effect */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #d0d0d0;
+  /* Slightly darker on hover */
+  border-color: #6a6a6a;
+}
+
+.submit-button:active {
+  background-color: #c0c0c0;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Pressed-in effect */
+}
+
+/* Dark Mode Styling for Contact Section */
+body.dark-mode .contact-section {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode .contact-content h2,
+body.dark-mode .contact-content p,
+body.dark-mode .form-group label {
+  color: #e0e0e0;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+body.dark-mode .submit-button {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+body.dark-mode .submit-button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,121 @@
+/* hero.css */
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column-reverse wrap;
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #e0ebff;
+  /* Light grayish-blue XP background */
+  border: 1px solid #a2c4e7;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #ffffff;
+  /* Subtle XP-like shadow */
+}
+
+.hero-content h2 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+}
+
+.hero-buttons .button {
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #e8e8e8;
+  /* XP-inspired button color */
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  /* 3D effect for button */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.hero-buttons .button:hover {
+  background-color: #d0d0d0;
+  /* Darker gray on hover */
+  border-color: #6a6a6a;
+}
+
+.hero-buttons .button:active {
+  background-color: #c0c0c0;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Pressed-in effect */
+}
+
+.hero-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #a2c4e7;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* Border and shadow for XP look */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Dark Mode Styling for Hero Section */
+body.dark-mode .hero-section {
+  background-color: #1e1e1e;
+  /* Dark background color */
+  color: #e0e0e0;
+  /* Light text color */
+}
+
+body.dark-mode .hero-content h1,
+body.dark-mode .hero-content h2,
+body.dark-mode .tagline {
+  color: #e0e0e0;
+  /* Light text color for headings and tagline */
+}
+
+body.dark-mode .hero-buttons .button {
+  background-color: #333;
+  /* Dark button background */
+  color: #e0e0e0;
+  /* Light button text */
+  border: 1px solid #555;
+  /* Border for button */
+}
+
+body.dark-mode .hero-buttons .button:hover {
+  background-color: #555;
+  /* Slightly lighter color on hover */
+  color: #fff;
+  /* White text on hover */
+}

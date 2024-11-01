@@ -1,0 +1,86 @@
+/* projects.css */
+
+/* General Projects Section Styling */
+.projects-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #c3daf9;
+  /* Light blue XP background */
+  border: 1px solid #a2c4e7;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.projects-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px #ffffff;
+  /* Subtle text shadow */
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #e0ebff;
+  /* Light grayish-blue background */
+  border: 1px solid #a2c4e7;
+  border-radius: 4px;
+  box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    3px 3px 8px rgba(0, 0, 0, 0.2);
+  /* Inner shadow for 3D effect */
+  padding: 20px;
+  text-align: left;
+  max-width: 300px;
+}
+
+/* Project Card Content */
+.project-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  /* Ensures image fills the area without stretching */
+  border-radius: 5px;
+  /* Optional: Rounded corners */
+}
+
+
+/* Windows XP-Inspired Button */
+.xp-button {
+  font-size: 1em;
+  color: #333;
+  background-color: #e8e8e8;
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.xp-button:hover {
+  background-color: #d0d0d0;
+  border-color: #6a6a6a;
+}
+
+.xp-button:active {
+  background-color: #c0c0c0;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

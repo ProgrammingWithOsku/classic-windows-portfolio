@@ -1,0 +1,286 @@
+/* main.css */
+
+/* General reset for elements not covered by normalize.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-color: #c3daf9;
+  /* Windows XP light blue background */
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+code,
+pre,
+.tagline,
+.skills-list li {
+  font-family: 'Inconsolata', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #222;
+  text-shadow: 1px 1px #ffffff;
+  /* Subtle text shadow for XP effect */
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Styling with Windows XP look */
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+  /* Adjust as needed */
+  background-color: #e0ebff;
+  /* Light grayish-blue background */
+  border: 1px solid #a2c4e7;
+  /* Light blue border */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  /* Outer shadow for 3D effect */
+  border-radius: 5px;
+}
+
+/* Dark Mode for Sections */
+.dark-mode .contact-section,
+.dark-mode .projects-section,
+.dark-mode .about-me-section {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .project-card,
+.dark-mode .contact-content {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+.dark-mode .submit-button {
+  background-color: #0073e6;
+}
+
+.dark-mode .submit-button:hover {
+  background-color: #005bb5;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  /* Minor adjustment to prevent overlap */
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  /* Ensure it stays on top */
+}
+
+#dark-mode-toggle:hover {
+  background-color: #005bb5;
+}
+
+/* Windows XP-inspired Button for Light Mode */
+.button,
+.submit-button {
+  background-color: #e8e8e8;
+  /* Light gray background */
+  color: #333;
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  /* XP-like 3D effect */
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.button:hover,
+.submit-button:hover {
+  background-color: #d0d0d0;
+  /* Slightly darker on hover */
+  border-color: #6a6a6a;
+}
+
+.button:active,
+.submit-button:active {
+  background-color: #c0c0c0;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Inset shadow on click */
+}
+
+/* Dark Mode Styling for Buttons */
+.dark-mode .button,
+.dark-mode .submit-button {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .button:hover,
+.dark-mode .submit-button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+
+/* Language Selection Modal */
+.language-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+  /* Initially hidden */
+}
+
+.language-modal-content {
+  background-color: #e0ebff;
+  /* Windows XP-like background */
+  border: 1px solid #a2c4e7;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.language-modal-content h3 {
+  font-size: 1.5em;
+  color: #333;
+  text-shadow: 1px 1px #ffffff;
+  margin-bottom: 10px;
+}
+
+.language-buttons .xp-button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  color: #333;
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.language-buttons .xp-button:hover {
+  background-color: #d0d0d0;
+  border-color: #6a6a6a;
+}
+
+/* Cookie Consent Popup */
+.cookie-modal {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background-color: #e0ebff;
+  /* Light XP-inspired color */
+  border: 1px solid #a2c4e7;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  display: none;
+  /* Initially hidden */
+}
+
+.cookie-modal-content p {
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.cookie-modal .xp-button {
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  color: #333;
+  border: 2px solid #8a8a8a;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cookie-modal .xp-button:hover {
+  background-color: #d0d0d0;
+  border-color: #6a6a6a;
+}
+
+
+
+/* Loading Screen Styling */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e0ebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loading-screen .spinner {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #a2c4e7;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 300px;
+}
+
+.loading-screen .spinner p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Spinner GIF Styling */
+.loading-screen .spinner img {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+}
